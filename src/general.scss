@@ -3,25 +3,25 @@ General purpose css utility variables
 */
 
 html {
-    background-color: rgb(var(--background));
-    color: rgb(var(--foreground));
-    font-family: var(--font-sans-variable, --font-sans, --font-system);
+    background-color: hsl(var(--background, 0deg 0% 100%));
+    color: hsl(var(--foreground, 0deg 0% 0%));
+    font-family: var(--font-visby-variable, --font-visby, --font-system);
 }
 
 :root {
     // base shadows - change on theme
-    --shadow-base-tiny: 0 0 50px rgb(var(--accent-200));
-    --shadow-base-small: 0 0 50px rgb(var(--accent-200));
-    --shadow-base-medium: 0 0 50px rgb(var(--accent-200));
-    --shadow-base-large: 0 20px 60px rgb(var(--accent-200));
-    --shadow-base-huge: 0 20px 60px rgb(var(--accent-200));
+    --shadow-base-tiny: 0 0 50px hsl(var(--accent-200, 0deg 0% 92%));
+    --shadow-base-small: 0 0 50px hsl(var(--accent-200, 0deg 0% 92%));
+    --shadow-base-medium: 0 0 50px hsl(var(--accent-200, 0deg 0% 92%));
+    --shadow-base-large: 0 20px 60px hsl(var(--accent-200, 0deg 0% 92%));
+    --shadow-base-huge: 0 20px 60px hsl(var(--accent-200, 0deg 0% 92%));
     // shadows
     --shadow-tiny: var(--shadow-base-tiny);
     --shadow-small: var(--shadow-base-small);
     --shadow-medium: var(--shadow-base-medium);
     --shadow-large: var(--shadow-base-large);
     --shadow-huge: var(--shadow-base-huge);
-    --shadow-line: 0 0 0 1px rgb(var(--accent-200));
+    --shadow-line: 0 0 0 1px hsl(var(--accent-200, 0deg 0% 92%));
     // z indexes
     --z-default: 1;
     --z-modal: 100;
@@ -42,9 +42,9 @@ html {
         "lucida sans typewriter", "dejavu sans mono", "bitstream vera sans mono", "liberation mono",
         "nimbus mono l", monaco, "courier new", courier, monospace;
     // fonts -- variable
-    --font-sans-variable: "Visby Variable", var(--font-system);
-    --font-mono-variable: "Visby Mono Variable", var(--font-system-mono);
+    --font-visby-variable: "Visby Variable", var(--font-system);
+    --font-visby-mono-variable: "Visby Mono Variable", var(--font-system-mono);
     // fonts -- normal
-    --font-sans: "Visby", var(--font-system);
-    --font-mono: "Visby Mono", var(--font-system-mono);
+    --font-visby: "Visby", var(--font-system);
+    --font-visby-mono: "Visby Mono", var(--font-system-mono);
 }
