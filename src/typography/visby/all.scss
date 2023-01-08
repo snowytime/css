@@ -107,3 +107,13 @@
         url("../../../assets/visby/visby-black.woff") format("woff"),
         url("../../../assets/visby/visby-black.ttf") format("truetype");
 }
+
+@font-face {
+    font-display: auto;
+    font-family: "Visby Variable";
+    font-style: normal;
+    font-weight: 100 900;
+    src: url("../../../assets/visby/visby-variable.woff2") format("woff2"),
+        url("../../../assets/visby/visby-variable.woff") format("woff"),
+        url("../../../assets/visby/visby-variable.ttf") format("truetype");
+}
