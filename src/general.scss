@@ -1,0 +1,50 @@
+/*
+General purpose css utility variables
+*/
+
+html {
+    background-color: rgb(var(--background));
+    color: rgb(var(--foreground));
+    font-family: var(--font-sans-variable, --font-sans, --font-system);
+}
+
+:root {
+    // base shadows - change on theme
+    --shadow-base-tiny: 0 0 50px rgb(var(--accent-200));
+    --shadow-base-small: 0 0 50px rgb(var(--accent-200));
+    --shadow-base-medium: 0 0 50px rgb(var(--accent-200));
+    --shadow-base-large: 0 20px 60px rgb(var(--accent-200));
+    --shadow-base-huge: 0 20px 60px rgb(var(--accent-200));
+    // shadows
+    --shadow-tiny: var(--shadow-base-tiny);
+    --shadow-small: var(--shadow-base-small);
+    --shadow-medium: var(--shadow-base-medium);
+    --shadow-large: var(--shadow-base-large);
+    --shadow-huge: var(--shadow-base-huge);
+    --shadow-line: 0 0 0 1px rgb(var(--accent-200));
+    // z indexes
+    --z-default: 1;
+    --z-modal: 100;
+    --z-message: 101;
+    --z-float: 99;
+    --z-special: 10;
+    // border-radius
+    --rounded-small: 4px;
+    --rounded-default: 6px;
+    --rounded-medium: 12px;
+    --rounded-large: 20px;
+    --rounded-pill: 1000px;
+    --rounded-circle: 50%;
+    // fonts -- system
+    --font-system: system-ui, "Segoe UI", roboto, helvetica, arial, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-system-mono: consolas, "andale mono wt", "andale mono", "lucida console",
+        "lucida sans typewriter", "dejavu sans mono", "bitstream vera sans mono", "liberation mono",
+        "nimbus mono l", monaco, "courier new", courier, monospace;
+    // fonts -- variable
+    --font-sans-variable: "Visby Variable", var(--font-system);
+    --font-mono-variable: "Visby Mono Variable", var(--font-system-mono);
+    // fonts -- normal
+    --font-sans: "Visby", var(--font-system);
+    --font-mono: "Visby Mono", var(--font-system-mono);
+}

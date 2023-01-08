@@ -1,0 +1,41 @@
+{
+    "name": "@snowytime/css",
+    "version": "0.0.0",
+    "description": "",
+    "keywords": [
+        "css"
+    ],
+    "author": "snowytime",
+    "license": "MIT",
+    "dependencies": {
+        "sass": "^1.57.1"
+    },
+    "devDependencies": {
+        "prettier": "^2.8.2",
+        "stylelint": "^14.16.1",
+        "stylelint-color-format": "^1.1.0",
+        "stylelint-config-prettier": "^9.0.4",
+        "stylelint-config-sass-guidelines": "^9.0.1",
+        "stylelint-config-standard": "^29.0.0",
+        "stylelint-config-standard-scss": "^6.1.0",
+        "stylelint-declaration-block-no-ignored-properties": "^2.6.0",
+        "stylelint-order": "^6.0.1",
+        "stylelint-prettier": "^2.0.0",
+        "stylelint-scss": "^4.3.0"
+    },
+    "scripts": {
+        "compile": "sass --update src:dist --style compressed",
+        "release:patch": "npm run compile && git add . && git commit -m '🥳 auto patch' && git push origin master && npm version patch && npm publish"
+    },
+    "files": [
+        "assets",
+        "dist"
+    ],
+    "exports": {
+        "./colours/": "./dist/colours/colours/colours.css",
+        "./dark/": "./dist/colours/dark.css",
+        "./reset/": "./dist/reset.css",
+        "./general/": "./dist/general.css",
+        "./fonts/": "./dist/typography/"
+    }
+}

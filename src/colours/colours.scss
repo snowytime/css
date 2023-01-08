@@ -1,0 +1,142 @@
+:root {
+    // mono
+    --white: 0deg 0% 100%;
+    --black: 0deg 0% 0%;
+
+    // grey - used to map after theme changes
+    --grey-100: 0deg 0% 98%;
+    --grey-200: 0deg 0% 92%;
+    --grey-300: 0deg 0% 66%;
+    --grey-400: 0deg 0% 55%;
+    --grey-500: 0deg 0% 44%;
+    --grey-600: 0deg 0% 32%;
+    --grey-700: 0deg 0% 22%;
+    --grey-800: 0deg 0% 15%;
+    --grey-900: 0deg 0% 7%;
+
+    // accents - toggles on theme change
+    --accent-100: var(--grey-100);
+    --accent-200: var(--grey-200);
+    --accent-300: var(--grey-300);
+    --accent-400: var(--grey-400);
+    --accent-500: var(--grey-500);
+    --accent-600: var(--grey-600);
+    --accent-700: var(--grey-700);
+    --accent-800: var(--grey-800);
+    --accent-900: var(--grey-900);
+
+    // base - toggles on theme change
+    --background: var(--white);
+    --foreground: var(--black);
+
+    // red
+    --red-100: 354deg 100% 90%;
+    --red-200: 0deg 73% 77%;
+    --red-300: 0deg 69% 67%;
+    --red-400: 1deg 83% 63%;
+    --red-500: 4deg 90% 58%;
+    --red-600: 1deg 77% 55%;
+    --red-700: 0deg 65% 51%;
+    --red-800: 0deg 66% 47%;
+    --red-900: 0deg 73% 41%;
+
+    // pink
+    --pink-100: 339deg 81% 85%;
+    --pink-200: 340deg 82% 76%;
+    --pink-300: 340deg 83% 66%;
+    --pink-400: 340deg 82% 59%;
+    --pink-500: 340deg 82% 52%;
+    --pink-600: 338deg 78% 48%;
+    --pink-700: 336deg 78% 43%;
+    --pink-800: 334deg 79% 38%;
+    --pink-900: 328deg 81% 29%;
+
+    // blue
+    --blue-100: 207deg 89% 86%;
+    --blue-200: 207deg 90% 77%;
+    --blue-300: 207deg 89% 68%;
+    --blue-400: 207deg 90% 61%;
+    --blue-500: 207deg 90% 54%;
+    --blue-600: 208deg 79% 51%;
+    --blue-700: 210deg 79% 46%;
+    --blue-800: 212deg 80% 42%;
+    --blue-900: 216deg 85% 34%;
+
+    // light blue
+    --light-blue-100: 199deg 92% 85%;
+    --light-blue-200: 199deg 92% 74%;
+    --light-blue-300: 199deg 91% 64%;
+    --light-blue-400: 199deg 92% 56%;
+    --light-blue-500: 199deg 98% 48%;
+    --light-blue-600: 200deg 97% 45%;
+    --light-blue-700: 201deg 98% 41%;
+    --light-blue-800: 202deg 98% 37%;
+    --light-blue-900: 206deg 99% 31%;
+
+    // green
+    --green-100: 122deg 37% 84%;
+    --green-200: 122deg 37% 74%;
+    --green-300: 123deg 38% 64%;
+    --green-400: 123deg 38% 57%;
+    --green-500: 122deg 39% 49%;
+    --green-600: 123deg 41% 45%;
+    --green-700: 123deg 43% 39%;
+    --green-800: 123deg 46% 34%;
+    --green-900: 124deg 55% 24%;
+
+    // light green
+    --light-green-100: 88deg 51% 86%;
+    --light-green-200: 88deg 50% 76%;
+    --light-green-300: 88deg 50% 67%;
+    --light-green-400: 88deg 50% 60%;
+    --light-green-500: 88deg 50% 53%;
+    --light-green-600: 89deg 46% 48%;
+    --light-green-700: 92deg 48% 42%;
+    --light-green-800: 95deg 49% 36%;
+    --light-green-900: 103deg 56% 26%;
+
+    // yellow
+    --yellow-100: 54deg 100% 88%;
+    --yellow-200: 54deg 100% 81%;
+    --yellow-300: 54deg 100% 73%;
+    --yellow-400: 54deg 100% 67%;
+    --yellow-500: 54deg 100% 62%;
+    --yellow-600: 49deg 98% 60%;
+    --yellow-700: 43deg 96% 58%;
+    --yellow-800: 37deg 95% 56%;
+    --yellow-900: 28deg 92% 53%;
+
+    // amber
+    --amber-100: 45deg 100% 85%;
+    --amber-200: 45deg 100% 75%;
+    --amber-300: 46deg 100% 65%;
+    --amber-400: 45deg 100% 58%;
+    --amber-500: 45deg 100% 51%;
+    --amber-600: 42deg 100% 50%;
+    --amber-700: 38deg 100% 50%;
+    --amber-800: 34deg 100% 50%;
+    --amber-900: 26deg 100% 50%;
+
+    // orange
+    --orange-100: 36deg 100% 85%;
+    --orange-200: 36deg 100% 75%;
+    --orange-300: 36deg 100% 65%;
+    --orange-400: 36deg 100% 57%;
+    --orange-500: 36deg 100% 50%;
+    --orange-600: 33deg 100% 49%;
+    --orange-700: 30deg 100% 48%;
+    --orange-800: 27deg 100% 47%;
+    --orange-900: 21deg 100% 45%;
+
+    // deep orange
+    --visby-deep-orange-50: 6deg 71% 95%;
+    --visby-deep-orange-100: 14deg 100% 87%;
+    --visby-deep-orange-200: 14deg 100% 78%;
+    --visby-deep-orange-300: 14deg 100% 70%;
+    --visby-deep-orange-400: 14deg 100% 63%;
+    --visby-deep-orange-500: 14deg 100% 57%;
+    --visby-deep-orange-600: 14deg 91% 54%;
+    --visby-deep-orange-700: 14deg 80% 50%;
+    --visby-deep-orange-800: 14deg 82% 46%;
+    --visby-deep-orange-900: 14deg 88% 40%;
+}

@@ -1,0 +1,46 @@
+// this file is used to indicate that we are using dark/light mode
+
+[data-theme="dark"] {
+    // base
+    --background: var(--white);
+    --foreground: var(--black);
+    // grey shades
+    --accent-100: var(--grey-900);
+    --accent-200: var(--grey-800);
+    --accent-300: var(--grey-700);
+    --accent-400: var(--grey-600);
+    --accent-500: var(--grey-500);
+    --accent-600: var(--grey-400);
+    --accent-700: var(--grey-300);
+    --accent-800: var(--grey-200);
+    --accent-900: var(--grey-100);
+    // box shadows
+    --shadow-tiny: var(--shadow-line);
+    --shadow-small: var(--shadow-line);
+    --shadow-medium: var(--shadow-line);
+    --shadow-large: var(--shadow-line);
+    --shadow-huge: var(--shadow-line);
+}
+@media (prefers-color-scheme: dark) {
+    [data-theme="system"] {
+        // base
+        --background: var(--white);
+        --foreground: var(--black);
+        // grey shades
+        --accent-100: var(--grey-900);
+        --accent-200: var(--grey-800);
+        --accent-300: var(--grey-700);
+        --accent-400: var(--grey-600);
+        --accent-500: var(--grey-500);
+        --accent-600: var(--grey-400);
+        --accent-700: var(--grey-300);
+        --accent-800: var(--grey-200);
+        --accent-900: var(--grey-100);
+        // box shadows
+        --shadow-tiny: var(--shadow-line);
+        --shadow-small: var(--shadow-line);
+        --shadow-medium: var(--shadow-line);
+        --shadow-large: var(--shadow-line);
+        --shadow-huge: var(--shadow-line);
+    }
+}
