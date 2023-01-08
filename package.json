@@ -30,10 +30,11 @@
         "dist"
     ],
     "exports": {
-        "./colours/": "./dist/colours/colours/colours.css",
-        "./dark/": "./dist/colours/dark.css",
-        "./reset/": "./dist/reset.css",
-        "./general/": "./dist/general.css",
+        "./colours": "./dist/colours/colours/colours.css",
+        "./dark": "./dist/colours/dark.css",
+        "./reset": "./dist/reset.css",
+        "./general": "./dist/general.css",
+        "./visby": "./dist/visby.css",
         "./fonts/": "./dist/typography/"
     }
 }
