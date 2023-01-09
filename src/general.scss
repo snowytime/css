@@ -5,7 +5,7 @@ General purpose css utility variables
 html {
     background-color: hsl(var(--background, 0deg 0% 100%));
     color: hsl(var(--foreground, 0deg 0% 0%));
-    font-family: var(--font-visby-variable, --font-visby, --font-system);
+    font-family: var(--font-visby, --font-system);
 }
 
 :root {
@@ -41,7 +41,7 @@ html {
     --font-system-mono: consolas, "andale mono wt", "andale mono", "lucida console",
         "lucida sans typewriter", "dejavu sans mono", "bitstream vera sans mono", "liberation mono",
         "nimbus mono l", monaco, "courier new", courier, monospace;
-    // fonts -- variable
+    // fonts -- variable -- in alpha
     --font-visby-variable: "Visby Variable", var(--font-system);
     --font-visby-mono-variable: "Visby Mono Variable", var(--font-system-mono);
     // fonts -- normal
