@@ -36,6 +36,7 @@
         "./reset": "./dist/reset.css",
         "./general": "./dist/general.css",
         "./visby": "./dist/visby.css",
-        "./fonts/": "./dist/typography/"
+        "./fonts/": "./dist/typography/",
+        "./presets/": "./dist/presets/"
     }
 }
