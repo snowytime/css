@@ -24,8 +24,8 @@
 @media (prefers-color-scheme: dark) {
     [data-theme="system"] {
         // base
-        --background: var(--white);
-        --foreground: var(--black);
+        --background: var(--black);
+        --foreground: var(--white);
         // grey shades
         --accent-100: var(--grey-900);
         --accent-200: var(--grey-800);
