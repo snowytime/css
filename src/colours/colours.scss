@@ -3,9 +3,14 @@
     --white: 0deg 0% 100%;
     --black: 0deg 0% 0%;
 
+    // base - toggles on theme change
+    --background: var(--white);
+    --foreground: var(--black);
+
     // grey - used to map after theme changes
-    --grey-100: 0deg 0% 98%;
-    --grey-200: 0deg 0% 92%;
+    --grey-50: 0deg 0% 98%;
+    --grey-100: 0deg 0% 92%;
+    --grey-200: 0deg 0% 80%;
     --grey-300: 0deg 0% 66%;
     --grey-400: 0deg 0% 55%;
     --grey-500: 0deg 0% 44%;
@@ -15,6 +20,7 @@
     --grey-900: 0deg 0% 7%;
 
     // accents - toggles on theme change
+    --accent-50: var(--grey-50);
     --accent-100: var(--grey-100);
     --accent-200: var(--grey-200);
     --accent-300: var(--grey-300);
@@ -25,118 +31,255 @@
     --accent-800: var(--grey-800);
     --accent-900: var(--grey-900);
 
-    // base - toggles on theme change
-    --background: var(--white);
-    --foreground: var(--black);
+    // slate
+    --slate-50: 210deg 40% 98%;
+    --slate-100: 210deg 40% 96%;
+    --slate-200: 214deg 32% 91%;
+    --slate-300: 213deg 27% 84%;
+    --slate-400: 215deg 20% 65%;
+    --slate-500: 215deg 16% 47%;
+    --slate-600: 215deg 19% 35%;
+    --slate-700: 215deg 25% 27%;
+    --slate-800: 217deg 33% 17%;
+    --slate-900: 222deg 47% 11%;
+
+    // zinc
+    --zinc-50: 0deg 0% 98%;
+    --zinc-100: 220deg 14% 96%;
+    --zinc-200: 220deg 13% 91%;
+    --zinc-300: 216deg 12% 84%;
+    --zinc-400: 218deg 11% 65%;
+    --zinc-500: 220deg 9% 46%;
+    --zinc-600: 215deg 14% 34%;
+    --zinc-700: 217deg 19% 27%;
+    --zinc-800: 215deg 28% 17%;
+    --zinc-900: 221deg 39% 11%;
+
+    // stone
+    --stone-50: 60deg 9% 98%;
+    --stone-100: 60deg 5% 96%;
+    --stone-200: 20deg 6% 90%;
+    --stone-300: 24deg 6% 83%;
+    --stone-400: 24deg 5% 64%;
+    --stone-500: 25deg 5% 45%;
+    --stone-600: 33deg 5% 32%;
+    --stone-700: 30deg 6% 25%;
+    --stone-800: 12deg 6% 15%;
+    --stone-900: 24deg 10% 10%;
+
+    // neutral
+    --neutral-50: 0deg 0% 98%;
+    --neutral-100: 0deg 0% 96%;
+    --neutral-200: 0deg 0% 90%;
+    --neutral-300: 0deg 0% 83%;
+    --neutral-400: 0deg 0% 64%;
+    --neutral-500: 0deg 0% 45%;
+    --neutral-600: 0deg 0% 32%;
+    --neutral-700: 0deg 0% 25%;
+    --neutral-800: 0deg 0% 15%;
+    --neutral-900: 0deg 0% 9%;
 
     // red
-    --red-100: 354deg 100% 90%;
-    --red-200: 0deg 73% 77%;
-    --red-300: 0deg 69% 67%;
-    --red-400: 1deg 83% 63%;
-    --red-500: 4deg 90% 58%;
-    --red-600: 1deg 77% 55%;
-    --red-700: 0deg 65% 51%;
-    --red-800: 0deg 66% 47%;
-    --red-900: 0deg 73% 41%;
-
-    // pink
-    --pink-100: 339deg 81% 85%;
-    --pink-200: 340deg 82% 76%;
-    --pink-300: 340deg 83% 66%;
-    --pink-400: 340deg 82% 59%;
-    --pink-500: 340deg 82% 52%;
-    --pink-600: 338deg 78% 48%;
-    --pink-700: 336deg 78% 43%;
-    --pink-800: 334deg 79% 38%;
-    --pink-900: 328deg 81% 29%;
-
-    // blue
-    --blue-100: 207deg 89% 86%;
-    --blue-200: 207deg 90% 77%;
-    --blue-300: 207deg 89% 68%;
-    --blue-400: 207deg 90% 61%;
-    --blue-500: 207deg 90% 54%;
-    --blue-600: 208deg 79% 51%;
-    --blue-700: 210deg 79% 46%;
-    --blue-800: 212deg 80% 42%;
-    --blue-900: 216deg 85% 34%;
-
-    // light blue
-    --light-blue-100: 199deg 92% 85%;
-    --light-blue-200: 199deg 92% 74%;
-    --light-blue-300: 199deg 91% 64%;
-    --light-blue-400: 199deg 92% 56%;
-    --light-blue-500: 199deg 98% 48%;
-    --light-blue-600: 200deg 97% 45%;
-    --light-blue-700: 201deg 98% 41%;
-    --light-blue-800: 202deg 98% 37%;
-    --light-blue-900: 206deg 99% 31%;
-
-    // green
-    --green-100: 122deg 37% 84%;
-    --green-200: 122deg 37% 74%;
-    --green-300: 123deg 38% 64%;
-    --green-400: 123deg 38% 57%;
-    --green-500: 122deg 39% 49%;
-    --green-600: 123deg 41% 45%;
-    --green-700: 123deg 43% 39%;
-    --green-800: 123deg 46% 34%;
-    --green-900: 124deg 55% 24%;
-
-    // light green
-    --light-green-100: 88deg 51% 86%;
-    --light-green-200: 88deg 50% 76%;
-    --light-green-300: 88deg 50% 67%;
-    --light-green-400: 88deg 50% 60%;
-    --light-green-500: 88deg 50% 53%;
-    --light-green-600: 89deg 46% 48%;
-    --light-green-700: 92deg 48% 42%;
-    --light-green-800: 95deg 49% 36%;
-    --light-green-900: 103deg 56% 26%;
-
-    // yellow
-    --yellow-100: 54deg 100% 88%;
-    --yellow-200: 54deg 100% 81%;
-    --yellow-300: 54deg 100% 73%;
-    --yellow-400: 54deg 100% 67%;
-    --yellow-500: 54deg 100% 62%;
-    --yellow-600: 49deg 98% 60%;
-    --yellow-700: 43deg 96% 58%;
-    --yellow-800: 37deg 95% 56%;
-    --yellow-900: 28deg 92% 53%;
-
-    // amber
-    --amber-100: 45deg 100% 85%;
-    --amber-200: 45deg 100% 75%;
-    --amber-300: 46deg 100% 65%;
-    --amber-400: 45deg 100% 58%;
-    --amber-500: 45deg 100% 51%;
-    --amber-600: 42deg 100% 50%;
-    --amber-700: 38deg 100% 50%;
-    --amber-800: 34deg 100% 50%;
-    --amber-900: 26deg 100% 50%;
+    --red-50: 0deg 86% 97%;
+    --red-100: 0deg 93% 94%;
+    --red-200: 0deg 96% 89%;
+    --red-300: 0deg 94% 82%;
+    --red-400: 0deg 91% 71%;
+    --red-500: 0deg 84% 60%;
+    --red-600: 0deg 72% 51%;
+    --red-700: 0deg 74% 42%;
+    --red-800: 0deg 70% 35%;
+    --red-900: 0deg 63% 31%;
 
     // orange
-    --orange-100: 36deg 100% 85%;
-    --orange-200: 36deg 100% 75%;
-    --orange-300: 36deg 100% 65%;
-    --orange-400: 36deg 100% 57%;
-    --orange-500: 36deg 100% 50%;
-    --orange-600: 33deg 100% 49%;
-    --orange-700: 30deg 100% 48%;
-    --orange-800: 27deg 100% 47%;
-    --orange-900: 21deg 100% 45%;
+    --orange-50: 33deg 100% 96%;
+    --orange-100: 34deg 100% 92%;
+    --orange-200: 32deg 98% 83%;
+    --orange-300: 31deg 97% 72%;
+    --orange-400: 27deg 96% 61%;
+    --orange-500: 25deg 95% 53%;
+    --orange-600: 21deg 90% 48%;
+    --orange-700: 17deg 88% 40%;
+    --orange-800: 15deg 79% 34%;
+    --orange-900: 15deg 75% 28%;
 
-    // deep orange
-    --deep-orange-50: 6deg 71% 95%;
-    --deep-orange-100: 14deg 100% 87%;
-    --deep-orange-200: 14deg 100% 78%;
-    --deep-orange-300: 14deg 100% 70%;
-    --deep-orange-400: 14deg 100% 63%;
-    --deep-orange-500: 14deg 100% 57%;
-    --deep-orange-600: 14deg 91% 54%;
-    --deep-orange-700: 14deg 80% 50%;
-    --deep-orange-800: 14deg 82% 46%;
-    --deep-orange-900: 14deg 88% 40%;
+    // amber
+    --amber-50: 48deg 100% 96%;
+    --amber-100: 48deg 96% 89%;
+    --amber-200: 48deg 97% 77%;
+    --amber-300: 46deg 97% 65%;
+    --amber-400: 43deg 96% 56%;
+    --amber-500: 38deg 92% 50%;
+    --amber-600: 32deg 95% 44%;
+    --amber-700: 26deg 90% 37%;
+    --amber-800: 23deg 83% 31%;
+    --amber-900: 22deg 78% 26%;
+
+    // yellow
+    --yellow-50: 55deg 92% 95%;
+    --yellow-100: 55deg 97% 88%;
+    --yellow-200: 53deg 98% 77%;
+    --yellow-300: 50deg 98% 64%;
+    --yellow-400: 48deg 96% 53%;
+    --yellow-500: 45deg 93% 47%;
+    --yellow-600: 41deg 96% 40%;
+    --yellow-700: 35deg 92% 33%;
+    --yellow-800: 32deg 81% 29%;
+    --yellow-900: 28deg 73% 26%;
+
+    // lime
+    --lime-50: 78deg 92% 95%;
+    --lime-100: 80deg 89% 89%;
+    --lime-200: 81deg 88% 80%;
+    --lime-300: 82deg 85% 67%;
+    --lime-400: 83deg 78% 55%;
+    --lime-500: 84deg 81% 44%;
+    --lime-600: 85deg 85% 35%;
+    --lime-700: 86deg 78% 27%;
+    --lime-800: 86deg 69% 23%;
+    --lime-900: 88deg 61% 20%;
+
+    // green
+    --green-50: 138deg 76% 97%;
+    --green-100: 141deg 84% 93%;
+    --green-200: 141deg 79% 85%;
+    --green-300: 142deg 77% 73%;
+    --green-400: 142deg 69% 58%;
+    --green-500: 142deg 71% 45%;
+    --green-600: 142deg 76% 36%;
+    --green-700: 142deg 72% 29%;
+    --green-800: 143deg 64% 24%;
+    --green-900: 144deg 61% 20%;
+
+    // emerald
+    --emerald-50: 152deg 81% 96%;
+    --emerald-100: 149deg 80% 90%;
+    --emerald-200: 152deg 76% 80%;
+    --emerald-300: 156deg 72% 67%;
+    --emerald-400: 158deg 64% 52%;
+    --emerald-500: 160deg 84% 39%;
+    --emerald-600: 161deg 94% 30%;
+    --emerald-700: 163deg 94% 24%;
+    --emerald-800: 163deg 88% 20%;
+    --emerald-900: 164deg 86% 16%;
+
+    // teal
+    --teal-50: 166deg 76% 97%;
+    --teal-100: 167deg 85% 89%;
+    --teal-200: 168deg 84% 78%;
+    --teal-300: 171deg 77% 64%;
+    --teal-400: 172deg 66% 50%;
+    --teal-500: 173deg 80% 40%;
+    --teal-600: 175deg 84% 32%;
+    --teal-700: 175deg 77% 26%;
+    --teal-800: 176deg 69% 22%;
+    --teal-900: 176deg 61% 19%;
+
+    // cyan
+    --cyan-50: 183deg 100% 96%;
+    --cyan-100: 185deg 96% 90%;
+    --cyan-200: 186deg 94% 82%;
+    --cyan-300: 187deg 92% 69%;
+    --cyan-400: 188deg 86% 53%;
+    --cyan-500: 189deg 94% 43%;
+    --cyan-600: 192deg 91% 36%;
+    --cyan-700: 193deg 82% 31%;
+    --cyan-800: 194deg 70% 27%;
+    --cyan-900: 196deg 64% 24%;
+
+    // sky
+    --sky-50: 204deg 100% 97%;
+    --sky-100: 204deg 94% 94%;
+    --sky-200: 201deg 94% 86%;
+    --sky-300: 199deg 95% 74%;
+    --sky-400: 198deg 93% 60%;
+    --sky-500: 199deg 89% 48%;
+    --sky-600: 200deg 98% 39%;
+    --sky-700: 201deg 96% 32%;
+    --sky-800: 201deg 90% 27%;
+    --sky-900: 202deg 80% 24%;
+
+    // blue
+    --blue-50: 214deg 100% 97%;
+    --blue-100: 214deg 95% 93%;
+    --blue-200: 213deg 97% 87%;
+    --blue-300: 212deg 96% 78%;
+    --blue-400: 213deg 94% 68%;
+    --blue-500: 217deg 91% 60%;
+    --blue-600: 221deg 83% 53%;
+    --blue-700: 224deg 76% 48%;
+    --blue-800: 226deg 71% 40%;
+    --blue-900: 224deg 64% 33%;
+
+    // indigo
+    --indigo-50: 226deg 100% 97%;
+    --indigo-100: 226deg 100% 94%;
+    --indigo-200: 228deg 96% 89%;
+    --indigo-300: 230deg 94% 82%;
+    --indigo-400: 234deg 89% 74%;
+    --indigo-500: 239deg 84% 67%;
+    --indigo-600: 243deg 75% 59%;
+    --indigo-700: 245deg 58% 51%;
+    --indigo-800: 244deg 55% 41%;
+    --indigo-900: 242deg 47% 34%;
+
+    // violet
+    --violet-50: 250deg 100% 98%;
+    --violet-100: 251deg 91% 95%;
+    --violet-200: 251deg 95% 92%;
+    --violet-300: 253deg 95% 85%;
+    --violet-400: 255deg 92% 76%;
+    --violet-500: 258deg 90% 66%;
+    --violet-600: 262deg 83% 58%;
+    --violet-700: 263deg 70% 50%;
+    --violet-800: 263deg 69% 42%;
+    --violet-900: 264deg 67% 35%;
+
+    // purple
+    --purple-50: 270deg 100% 98%;
+    --purple-100: 269deg 100% 95%;
+    --purple-200: 269deg 100% 92%;
+    --purple-300: 269deg 97% 85%;
+    --purple-400: 270deg 95% 75%;
+    --purple-500: 271deg 91% 65%;
+    --purple-600: 271deg 81% 56%;
+    --purple-700: 272deg 72% 47%;
+    --purple-800: 273deg 67% 39%;
+    --purple-900: 274deg 66% 32%;
+
+    // fuchsia
+    --fuchsia-50: 289deg 100% 98%;
+    --fuchsia-100: 287deg 100% 95%;
+    --fuchsia-200: 288deg 96% 91%;
+    --fuchsia-300: 291deg 93% 83%;
+    --fuchsia-400: 292deg 91% 73%;
+    --fuchsia-500: 292deg 84% 61%;
+    --fuchsia-600: 293deg 69% 49%;
+    --fuchsia-700: 295deg 72% 40%;
+    --fuchsia-800: 295deg 70% 33%;
+    --fuchsia-900: 297deg 64% 28%;
+
+    // pink
+    --pink-50: 327deg 73% 97%;
+    --pink-100: 326deg 78% 95%;
+    --pink-200: 326deg 85% 90%;
+    --pink-300: 327deg 87% 82%;
+    --pink-400: 329deg 86% 70%;
+    --pink-500: 330deg 81% 60%;
+    --pink-600: 333deg 71% 51%;
+    --pink-700: 335deg 78% 42%;
+    --pink-800: 336deg 74% 35%;
+    --pink-900: 336deg 69% 30%;
+
+    // rose
+    --rose-50: 356deg 100% 97%;
+    --rose-100: 356deg 100% 95%;
+    --rose-200: 353deg 96% 90%;
+    --rose-300: 353deg 96% 82%;
+    --rose-400: 351deg 95% 71%;
+    --rose-500: 350deg 89% 60%;
+    --rose-600: 347deg 77% 50%;
+    --rose-700: 345deg 83% 41%;
+    --rose-800: 343deg 80% 35%;
+    --rose-900: 342deg 75% 30%;
 }
