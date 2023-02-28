@@ -10,7 +10,12 @@
     "author": "snowytime",
     "license": "MIT",
     "devDependencies": {
-        "@snowytime/standards": "^0.0.8",
+        "@snowytime/standards": "^1.0.4",
+        "@snowytime/vibe": "^0.0.93",
+        "@types/react": "^18.0.28",
+        "@types/react-dom": "^18.0.11",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
         "sass": "^1.57.1"
     },
     "scripts": {
