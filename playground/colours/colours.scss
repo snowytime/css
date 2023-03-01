@@ -9,6 +9,7 @@
     align-items: center;
     border: 2px solid hsl(var(--accent-200));
     border-radius: 8px;
+    cursor: pointer;
     display: flex;
     font-size: 12px;
     font-weight: 500;
@@ -18,7 +19,7 @@
 }
 
 .category {
-    margin: 20px;
+    margin: 10px;
 }
 
 .category-title {
@@ -28,7 +29,7 @@
     color: hsl(var(--blue-500));
     display: inline-block;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 10px;
     padding: 2px 6px;
 }

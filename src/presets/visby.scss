@@ -8,6 +8,9 @@ Preset with the visby theme
 @use "../general";
 
 html {
+    background-color: hsl(var(--background, 0deg 0% 100%));
+    color: hsl(var(--foreground, 0deg 0% 0%));
+    font-family: var(--font-visby, --font-system);
     font-size: 16px;
 }
 

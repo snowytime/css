@@ -2,12 +2,6 @@
 General purpose css utility variables
 */
 
-html {
-    background-color: hsl(var(--background, 0deg 0% 100%));
-    color: hsl(var(--foreground, 0deg 0% 0%));
-    font-family: var(--font-visby, --font-system);
-}
-
 :root {
     // base shadows - change on theme
     --shadow-base-tiny: 0 0 50px hsl(var(--accent-200, 0deg 0% 92%));

@@ -39,9 +39,22 @@ const Box = ({ color, level }: { color: string; level: string }) => {
         luminCalculate();
         observe();
     }, [ref, observe, luminCalculate]);
+    const [label, setLabel] = React.useState(level);
+    const addToClipboard = () => {
+        setLabel("copied!");
+        setTimeout(() => {
+            setLabel(level);
+        }, 1000);
+        navigator.clipboard.writeText(`hsl(var(${color}))`);
+    };
     return (
-        <div ref={setRef} className='colour' style={{ backgroundColor: `hsl(var(${color}))` }}>
-            {level}
+        <div
+            onClick={addToClipboard}
+            ref={setRef}
+            className='colour'
+            style={{ backgroundColor: `hsl(var(${color}))` }}
+        >
+            {label}
         </div>
     );
 };
