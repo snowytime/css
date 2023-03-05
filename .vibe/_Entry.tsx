@@ -7,5 +7,9 @@ import "../src/typography/visby/all.scss";
 
 export const Entry = ({ children }) => {
     const { storyUrls, storyTree } = useVibeContext();
-    return <Ui title='css-stuff'>{children}</Ui>;
+    return (
+        <Ui title='css-stuff' tree={storyTree}>
+            {children}
+        </Ui>
+    );
 };

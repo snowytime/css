@@ -1,6 +1,8 @@
 import React from "react";
+import { Category } from "@snowytime/vibe";
 import { CloseIcon, MenuIcon, MoonIcon, SunCirclesIcon } from "@snowytime/iconly-react/ui";
 import "./index.scss";
+import { Tree } from "./tree";
 
 export const useTheme = () => {
     const [theme, setTheme] = React.useState("light");
@@ -18,7 +20,15 @@ export const useTheme = () => {
     return { theme, setTheme, toggleTheme };
 };
 
-export const Ui = ({ children, title }: { children: React.ReactNode; title: string }) => {
+export const Ui = ({
+    children,
+    title,
+    tree,
+}: {
+    children: React.ReactNode;
+    title: string;
+    tree: Category[];
+}) => {
     const [open, setOpen] = React.useState(true);
     const { theme, toggleTheme } = useTheme();
     return (
@@ -43,10 +53,11 @@ export const Ui = ({ children, title }: { children: React.ReactNode; title: stri
                     style={{
                         width: open ? "" : "0",
                         transition: "width 0.2s ease-in-out",
+                        border: open ? "" : "none",
                     }}
                     className='vibe-content-sidebar'
                 >
-                    sidebar
+                    <Tree data={tree} />
                 </div>
                 <div className='vibe-content-window'>{children}</div>
             </section>

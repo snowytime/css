@@ -13,7 +13,7 @@
         "@snowytime/iconly-react": "^1.0.4",
         "@snowytime/react-hooks": "^1.0.8",
         "@snowytime/standards": "^1.0.4",
-        "@snowytime/vibe": "^0.0.97",
+        "@snowytime/vibe": "^0.0.123",
         "@types/react": "^18.0.28",
         "@types/react-dom": "^18.0.11",
         "@types/styled-components": "^5.1.26",
