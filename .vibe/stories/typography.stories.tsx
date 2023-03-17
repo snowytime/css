@@ -5,7 +5,7 @@ export default {
 };
 
 export const Story = () => {
-    return <div>Story</div>;
+    return <div>Story time</div>;
 };
 Story.story = {
     name: "custom name",
