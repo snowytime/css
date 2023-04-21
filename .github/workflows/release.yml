@@ -12,7 +12,10 @@ jobs:
               with:
                   node-version: "16.x"
                   registry-url: "https://registry.npmjs.org"
-            - run: npm ci
+            - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.PACKAGE_TOKEN }}" >> .npmrc
+            - env:
+                  GITHUB_TOKEN_PACKAGES: ${{ secrets.AUTH_TOKEN }}
+              run: npm ci
             - run: npm publish
               env:
                   GITHUB_TOKEN_PACKAGES: ${{ secrets.AUTH_TOKEN }}
