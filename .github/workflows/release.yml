@@ -39,7 +39,7 @@ jobs:
               uses: ad-m/github-push-action@v0.6.0
               with:
                   github_token: ${{ secrets.AUTH_TOKEN }}
-                  branch: main
+                  branch: master
 
             - name: Create GitHub release
               id: create_release
