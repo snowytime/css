@@ -2,7 +2,7 @@
     "name": "@snowytime/css",
     "sideEffects": false,
     "type": "module",
-    "version": "0.0.38",
+    "version": "0.0.39",
     "description": "",
     "keywords": [
         "css",
