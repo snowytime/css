@@ -39,7 +39,7 @@ jobs:
                   GITHUB_TOKEN_PACKAGES: ${{ secrets.AUTH_TOKEN }}
 
             - name: Publish package on NPM 📦
-              run: npm version ${{ env.RELEASE_TAG }} && npm publish
+              run: npm version ${{ env.RELEASE_TYPE }} && npm publish
               env:
                   GITHUB_TOKEN_PACKAGES: ${{ secrets.AUTH_TOKEN }}
 
