@@ -41,7 +41,7 @@ jobs:
             - name: Update changelog
               uses: superfaceai/release-changelog-action@v1
               with:
-                  path-to-changelog: CHANGELOG.md
+                  path-to-changelog: changelog.md
                   version: ${{ env.NEW_VERSION }}
                   operation: release
 
@@ -49,7 +49,7 @@ jobs:
             - name: Commit CHANGELOG.md and package.json changes and create tag
               run: |
                   git add "package.json"
-                  git add "CHANGELOG.md"
+                  git add "changelog.md"
                   git commit -m "chore: release ${{ env.NEW_VERSION }}"
                   git tag ${{ env.NEW_VERSION }}
 
@@ -68,7 +68,7 @@ jobs:
               name: Get version changelog
               uses: superfaceai/release-changelog-action@v1
               with:
-                  path-to-changelog: CHANGELOG.md
+                  path-to-changelog: changelog.md
                   version: ${{ env.NEW_VERSION }}
                   operation: read
 
