@@ -1,18 +1,19 @@
-name: NPM Publish
+name: Publish
 
 on:
     release:
         types: [published]
 
 jobs:
-    publish:
+    build:
         runs-on: ubuntu-latest
-
         steps:
-            - name: Set up Node.js
-              uses: actions/setup-node@v1
+            - uses: actions/checkout@v1
+            - uses: actions/setup-node@v1
               with:
-                  node-version: "14.x"
-
-            - name: Publish package
-              run: npm publish
+                  node-version: 12
+                  registry-url: https://registry.npmjs.org/
+            - run: yarn install
+            - run: npm publish --access public
+              env:
+                  GITHUB_TOKEN_PACKAGES: ${{secrets.AUTH_TOKEN}}
