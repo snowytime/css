@@ -46,8 +46,8 @@ jobs:
             - name: Update GitHub release documentation
               uses: softprops/action-gh-release@v1
               with:
-              tag_name: ${{ env.NEW_VERSION }}
-              body: "Test release"
-              prerelease: ${{ startsWith(github.event.inputs.release-type, 'pre') }}
+                  tag_name: ${{ env.NEW_VERSION }}
+                  body: "Test release"
+                  prerelease: ${{ startsWith(github.event.inputs.release-type, 'pre') }}
               env:
               GITHUB_TOKEN: ${{ secrets.AUTH_TOKEN }}
