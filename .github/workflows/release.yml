@@ -31,6 +31,8 @@ jobs:
                   echo "RELEASE_TAG=latest" >> $GITHUB_ENV
                   env:
                   RELEASE_TYPE: ${{ github.event.inputs.release-type }}
+              env:
+                  GITHUB_TOKEN_PACKAGES: ${{ secrets.AUTH_TOKEN }}
 
             - name: Publish package on NPM 📦
               run: npm version ${{ env.RELEASE_TAG }} && npm publish
