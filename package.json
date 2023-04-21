@@ -14,9 +14,6 @@
         "@snowytime/standards": "^1.0.4",
         "sass": "^1.57.1"
     },
-    "publishConfig": {
-        "@snowytime:registry": "https://npm.pkg.github.com"
-    },
     "scripts": {
         "compile": "sass --update src:dist --style compressed",
         "release:patch": "npm run compile && npm version patch && git add . && git commit -m '⚡️ auto patch'"
