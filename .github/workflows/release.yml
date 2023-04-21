@@ -50,4 +50,4 @@ jobs:
                   body: "Test release"
                   prerelease: ${{ startsWith(github.event.inputs.release-type, 'pre') }}
               env:
-              GITHUB_TOKEN: ${{ secrets.AUTH_TOKEN }}
+                  GITHUB_TOKEN: ${{ secrets.AUTH_TOKEN }}
