@@ -29,7 +29,7 @@ jobs:
 
             - name: Install dependencies
               run: npm install
-              emv:
+              env:
                   GITHUB_TOKEN_PACKAGES: ${{ secrets.AUTH_TOKEN }}
 
             - name: Build package
