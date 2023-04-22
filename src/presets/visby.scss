@@ -5,7 +5,7 @@ Preset with the visby theme
 @use "../reset";
 @use "../colours/colours";
 @use "../colours/dark";
-@use "../general";
+@use "../basics";
 
 html {
     background-color: hsl(var(--background, 0deg 0% 100%));
