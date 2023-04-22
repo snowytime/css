@@ -42,5 +42,6 @@ jobs:
               uses: changesets/action@v1
               with:
                   publish: npm publish
+                  token: ${{ secrets.AUTH_TOKEN }}
               env:
                   GITHUB_TOKEN: ${{ secrets.AUTH_TOKEN }}
