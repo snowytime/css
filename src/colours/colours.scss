@@ -8,19 +8,17 @@
     --foreground: var(--black);
 
     // grey - used to map after theme changes
-    --grey-50: 0deg 0% 94%;
-    --grey-100: 0deg 0% 90%;
-    --grey-200: 0deg 0% 80%;
-    --grey-300: 0deg 0% 70%;
-    --grey-400: 0deg 0% 60%;
-    --grey-500: 0deg 0% 50%;
-    --grey-600: 0deg 0% 40%;
-    --grey-700: 0deg 0% 30%;
-    --grey-800: 0deg 0% 20%;
+    --grey-100: 0deg 0% 94%;
+    --grey-200: 0deg 0% 84.12%;
+    --grey-300: 0deg 0% 74.24%;
+    --grey-400: 0deg 0% 64.36%;
+    --grey-500: 0deg 0% 54.48%;
+    --grey-600: 0deg 0% 44.6%;
+    --grey-700: 0deg 0% 34.72%;
+    --grey-800: 0deg 0% 24.84%;
     --grey-900: 0deg 0% 15%;
 
     // accents - toggles on theme change
-    --accent-50: var(--grey-50);
     --accent-100: var(--grey-100);
     --accent-200: var(--grey-200);
     --accent-300: var(--grey-300);
