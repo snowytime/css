@@ -34,7 +34,7 @@ jobs:
 
             - name: Build package
               run: npm run compile
-              emv:
+              env:
                   GITHUB_TOKEN_PACKAGES: ${{ secrets.AUTH_TOKEN }}
 
             - name: Create Release Pull Request or Publish to npm
